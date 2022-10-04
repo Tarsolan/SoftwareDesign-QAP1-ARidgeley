@@ -40,4 +40,15 @@ public class TransactionTest {
         transaction.withdraw(7000);
         Assertions.assertEquals(account.getBalance(), 1000);
     }
+
+    @Test
+    public void testWithdrawOverBalance(){
+        Account account = new Account("A2","Matthew Ridgeley", 8000);
+
+        // Create new transaction object for active user
+        Transaction transaction = new Transaction(account);
+
+        // Test withdraw method, should throw an error
+        Assertions.assertThrows(RuntimeException.class, () -> transaction.withdraw(10_000));
+    }
 }

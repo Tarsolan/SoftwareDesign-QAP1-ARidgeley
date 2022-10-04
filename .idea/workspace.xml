@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c149b33-26c5-4d1e-8e5c-f2969ed6f193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/QAPExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/general/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test1/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test2/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test3/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/CreateAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/DisplayReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/QAPExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test1/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test2/DateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test3/TimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test4/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test4/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test4/TransactionTest.java" afterDir="false" />
+    <list default="true" id="3c149b33-26c5-4d1e-8e5c-f2969ed6f193" name="Changes" comment="Updated test files to no longer require any form of user input">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/InsufficientFundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test4/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test4/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test4/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test4/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test1/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test1/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test4/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test4/TransactionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,33 +68,34 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionTest">
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QAP1-ARidgeley" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test4.*" />
+          <option name="PATTERN" value="com.test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test4" />
-      <option name="MAIN_CLASS_NAME" value="com.test4.AccountTest" />
+      <option name="PACKAGE_NAME" value="com.test1" />
+      <option name="MAIN_CLASS_NAME" value="com.test1.CalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QAP1-ARidgeley" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test2.*" />
+          <option name="PATTERN" value="com.test1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test2" />
-      <option name="MAIN_CLASS_NAME" value="com.test2.DateTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.test1" />
+      <option name="MAIN_CLASS_NAME" value="com.test1.CalculatorTest" />
+      <option name="METHOD_NAME" value="testDivide" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,21 +110,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.test4" />
       <option name="MAIN_CLASS_NAME" value="com.test4.SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QAP1-ARidgeley" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test3" />
-      <option name="MAIN_CLASS_NAME" value="com.test3.TimeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,13 +130,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionTest.testWithdrawOverBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QAP1-ARidgeley" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test4" />
+      <option name="MAIN_CLASS_NAME" value="com.test4.TransactionTest" />
+      <option name="METHOD_NAME" value="testWithdrawOverBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testDivide" />
+        <item itemvalue="JUnit.TransactionTest.testWithdrawOverBalance" />
         <item itemvalue="JUnit.TransactionTest" />
         <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.TimeTest" />
-        <item itemvalue="JUnit.DateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +165,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664369757628</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated test files to no longer require any form of user input">
+      <created>1664803952766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664803952766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,5 +185,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated test files to no longer require any form of user input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated test files to no longer require any form of user input" />
   </component>
 </project>

@@ -26,19 +26,13 @@ public class CalculatorTest {
     public void testDivide(){
         Calculator calculator = new Calculator();
         Assertions.assertEquals(calculator.divide(6, 2), 3);
-
-        boolean exceptionThrown = false;
-
-        // Attempts to divide by 0
-        try {
-            calculator.divide(500, 0);
-        } catch (ArithmeticException error) {
-            exceptionThrown = true;
-        }
-
-        Assertions.assertTrue(exceptionThrown);
     }
 
+    @Test
+    public void testDivideByZero(){
+        Calculator calculator = new Calculator();
+        Assertions.assertThrows(ArithmeticException.class, () -> calculator.divide(500, 0));
+    }
     @Test
     public void testTotal(){
         Calculator calculator = new Calculator();
