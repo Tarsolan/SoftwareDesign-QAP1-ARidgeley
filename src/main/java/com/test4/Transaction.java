@@ -35,12 +35,20 @@ public class Transaction {
 
     public void withdraw(){
         int amount = (int) Console.readNumber("Enter the amount being withdrawn: ", 0);
-        account.debit(amount);
+        try {
+            account.debit(amount);
+        } catch (InsufficientFundsException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("Money withdrawn.\n");
     }
 
     public void withdraw(int amount){
-        account.debit(amount);
+        try {
+            account.debit(amount);
+        } catch (InsufficientFundsException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("Money withdrawn.\n");
     }
 }

@@ -23,10 +23,10 @@ public class Account {
         return balance;
     }
 
-    public int debit(int amount){
+    public int debit(int amount) throws InsufficientFundsException{
         if (amount <= balance){
             balance -= amount;
-        } else System.out.println("Transaction not processed. Amount exceeded current balance.");
+        } else throw new InsufficientFundsException();
 
         return balance;
     }
