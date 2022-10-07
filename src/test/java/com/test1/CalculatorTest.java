@@ -33,6 +33,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         Assertions.assertThrows(ArithmeticException.class, () -> calculator.divide(500, 0));
     }
+
     @Test
     public void testTotal(){
         Calculator calculator = new Calculator();

@@ -37,7 +37,11 @@ public class TransactionTest {
         Transaction transaction = new Transaction(account);
 
         // Test withdraw method
-        transaction.withdraw(7000);
+        try {
+            transaction.withdraw(7000);
+        } catch (InsufficientFundsException e) {
+            throw new RuntimeException(e);
+        }
         Assertions.assertEquals(account.getBalance(), 1000);
     }
 
@@ -49,6 +53,6 @@ public class TransactionTest {
         Transaction transaction = new Transaction(account);
 
         // Test withdraw method, should throw an error
-        Assertions.assertThrows(RuntimeException.class, () -> transaction.withdraw(10_000));
+        Assertions.assertThrows(InsufficientFundsException.class, () -> transaction.withdraw(10_000));
     }
 }

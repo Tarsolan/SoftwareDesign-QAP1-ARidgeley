@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c149b33-26c5-4d1e-8e5c-f2969ed6f193" name="Changes" comment="Updated test files to no longer require any form of user input">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test4/InsufficientFundsException.java" afterDir="false" />
+    <list default="true" id="3c149b33-26c5-4d1e-8e5c-f2969ed6f193" name="Changes" comment="Updated error handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test1/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test1/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test4/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test4/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test4/InsufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test4/InsufficientFundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test4/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test4/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test1/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test1/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test4/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test4/TransactionTest.java" afterDir="false" />
@@ -100,21 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QAP1-ARidgeley" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test4" />
-      <option name="MAIN_CLASS_NAME" value="com.test4.SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TransactionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QAP1-ARidgeley" />
       <extension name="coverage">
@@ -126,6 +112,22 @@
       <option name="PACKAGE_NAME" value="com.test4" />
       <option name="MAIN_CLASS_NAME" value="com.test4.TransactionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest.testWithdraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QAP1-ARidgeley" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test4" />
+      <option name="MAIN_CLASS_NAME" value="com.test4.TransactionTest" />
+      <option name="METHOD_NAME" value="testWithdraw" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.testDivide" />
-        <item itemvalue="JUnit.TransactionTest.testWithdrawOverBalance" />
         <item itemvalue="JUnit.TransactionTest" />
-        <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="JUnit.TransactionTest.testWithdraw" />
+        <item itemvalue="JUnit.TransactionTest.testWithdrawOverBalance" />
+        <item itemvalue="JUnit.CalculatorTest.testDivide" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664803952766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added AssertThrows - more to come">
+      <created>1664885230601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664885230601</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated error handling">
+      <created>1664885256202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664885256202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +204,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated test files to no longer require any form of user input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated test files to no longer require any form of user input" />
+    <MESSAGE value="Added AssertThrows - more to come" />
+    <MESSAGE value="Updated error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated error handling" />
   </component>
 </project>

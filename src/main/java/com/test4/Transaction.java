@@ -33,21 +33,21 @@ public class Transaction {
         System.out.println("Money deposited.\n");
     }
 
-    public void withdraw(){
+    public void withdraw() throws InsufficientFundsException {
         int amount = (int) Console.readNumber("Enter the amount being withdrawn: ", 0);
         try {
             account.debit(amount);
         } catch (InsufficientFundsException e) {
-            throw new RuntimeException(e);
+            throw new InsufficientFundsException(e.getMessage());
         }
         System.out.println("Money withdrawn.\n");
     }
 
-    public void withdraw(int amount){
+    public void withdraw(int amount) throws InsufficientFundsException {
         try {
             account.debit(amount);
         } catch (InsufficientFundsException e) {
-            throw new RuntimeException(e);
+            throw new InsufficientFundsException(e.getMessage());
         }
         System.out.println("Money withdrawn.\n");
     }

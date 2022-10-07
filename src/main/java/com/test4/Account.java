@@ -26,7 +26,7 @@ public class Account {
     public int debit(int amount) throws InsufficientFundsException{
         if (amount <= balance){
             balance -= amount;
-        } else throw new InsufficientFundsException();
+        } else throw new InsufficientFundsException("Not enough money!");
 
         return balance;
     }

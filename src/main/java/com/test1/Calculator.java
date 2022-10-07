@@ -21,12 +21,12 @@ public class Calculator {
     }
 
     public void increaseTotal(double amount){
-        if (amount < 0) throw new NumberFormatException("Invalid number! Number cannot be less than 0. Use reduceTotal instead.");
+        if (amount < 0) throw new IllegalArgumentException("Invalid number! Number cannot be less than 0. Use reduceTotal instead.");
         else setTotal(total + amount);
     }
 
     public void reduceTotal(double amount) {
-        if (amount < 0) throw new NumberFormatException("Invalid number! Number cannot be less than 0. Use increaseTotal instead.");
+        if (amount < 0) throw new IllegalArgumentException("Invalid number! Number cannot be less than 0. Use increaseTotal instead.");
         if (total - amount < 0) throw new NumberFormatException("Total cannot go below 0.");
         else setTotal(total - amount);
     }
